@@ -1,0 +1,77 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Tulpen One', cursive;
+}
+.titulo{
+	font-weight: bold;
+}
+form{
+	background-color: gray;
+}
+.form-group {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 1rem;
+}
+
+label {
+	text-align: left; 
+}
+
+input.form-control {
+	border: none;
+	font-size: 16px;
+	color: black;
+}
+.botao{
+	text-align:left;
+	padding:1rem;
+	color:white;
+	background-color:#006400;
+	border:none;
+	font-weight: bold;
+	font-size:100%;
+	transition-delay: 0.1s;
+}
+
+.botao:hover {
+	color: black;
+    background: #32CD32;
+    box-shadow: 0 0 10px #32CD32, 0 0 40px #32CD32, 0 0 80px #32CD32;
+    transition-delay: 0.1s;
+
+}
+
+.conclusao{
+	background-color: gray;
+	
+}
+.fechamento{
+	padding:2rem;
+}
+
+@media (max-width: 700px){
+	.fechamento{
+		padding:1rem;
+	}
+	.fechamento p{
+		height:20rem;
+		width:10%;
+	}
+}
+
+.fechamento p{
+	background-color:white;
+	height:20rem;
+	width:80%;
+	margin:auto;
+	text-align:left;
+}
+
+
+
+
+
+
+
