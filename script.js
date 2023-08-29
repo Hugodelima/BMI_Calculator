@@ -15,8 +15,11 @@ btnCalcular.addEventListener("click", function(calcularIMC){
 
     calcularIMC.preventDefault();///nao recarregar pagina quando clicar no botão
 
-    if (peso.value !== "" && altura.value !== "") {
-        const resultadoIMC = peso.value/ (altura.value ** 2);
+	if (peso.value <= 0 || altura.value <=0){
+		exibirResultado.textContent = "Por favor, preencha todos os campos com Números!"
+		exibirResultado.style.color = "red";
+    }else {
+		const resultadoIMC = peso.value/ (altura.value ** 2);
 		exibirResultado.style.color = "black";
         
         
@@ -34,9 +37,5 @@ btnCalcular.addEventListener("click", function(calcularIMC){
 		}else{
 			exibirResultado.textContent = `Seu IMC é ${resultadoIMC.toFixed(2)}, sendo assim você está na obesidade grau III(morbida)`;//deixar só 2 casas decimais :D
 		}	
-
-    }else {
-        exibirResultado.textContent = "Por favor, preencha todos os campos com NÚMEROS!"
-		exibirResultado.style.color = "red";
     }
 });
